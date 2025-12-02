@@ -1,0 +1,33 @@
+# Virtual environments
+desenvolvimento/
+venv/
+.venv/
+.env/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Jupyter
+*.ipynb_checkpoints
+
+# Data / models
+*.joblib
+*.pkl
+
+# OS files
+.DS_Store
+Thumbs.db
+__pycache__/
+.venv/
+*.pyc
+*.pyo
+*.pyd
+*.joblib
+*.sqlite
+env/
+venv/
+*.egg-info/
+.ipynb_checkpoints/
+.DS_Store
