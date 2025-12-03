@@ -2,6 +2,10 @@
 
 Repositório com um pipeline simples para o dataset Pima Indians Diabetes (UCI). O objetivo é fornecer um projeto "plug-and-play" para treinar e avaliar modelos localmente sem necessidade de Spark/Java.
 
+<img width="2050" height="2078" alt="image" src="https://github.com/user-attachments/assets/9222025b-e269-4d9f-916f-dcf424ba0d16" />
+
+
+
 # Pima Diabetes Pipeline (pandas + scikit-learn)
 
 Repositório com um pipeline simples para o dataset Pima Indians Diabetes (UCI). O objetivo é fornecer um projeto "plug-and-play" para treinar e avaliar modelos localmente e usar o modelo treinado para prever em amostras reais (ex.: `voluntarios.json`).
