@@ -1,19 +1,8 @@
 #!/usr/bin/env python3
 """
-pima_diabetes_pipeline.py
-
-Fluxo em pandas + scikit-learn que replica o notebook:
-- carrega a base a partir de URLs (Tenta UCI e depois GitHub)
-- substitui zeros inválidos por NaN e imputa pela mediana
-- escala as features
-- treina LogisticRegression e RandomForest com GridSearch (AUC)
-- avalia no conjunto de teste e salva o melhor pipeline em disco
-
-Uso:
-    python pima_diabetes_pipeline.py --model-out best_model.joblib
-
-Requisitos:
-    pip install pandas scikit-learn joblib matplotlib seaborn
+Pima diabetes pipeline usando pandas e scikit-learn para download, preprocessamento, treino,
+validação cruzada, seleção de modelo, avaliação e salvamento do melhor modelo.
+Criado para ser 
 
 """
 import argparse
@@ -165,7 +154,7 @@ def main(argv=None):
             import shap
             import matplotlib.pyplot as plt
 
-            # treinar um RF simples na amostra (usamos treino completo já escalado dentro do pipeline)
+            # treinar um RF simples na amostra
             sample_X = X_train.sample(frac=0.2, random_state=42)
             sample_y = y_train.loc[sample_X.index]
             rf = RandomForestClassifier(n_estimators=200, random_state=42)
