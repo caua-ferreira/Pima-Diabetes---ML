@@ -43,32 +43,6 @@ O script `example/predict_voluntarios.py` aplica o mesmo pré-processamento do p
 **Boas práticas antes de subir**
 - Não commite a pasta `desenvolvimento/` (ambient virtual). Já incluí `.gitignore` para isso.
 
-**Como publicar no GitHub (passo-a-passo)**
-1. Inicialize repositório e faça commit localmente:
-```
-git init
-git add .
-git commit -m "Initial commit: Pima Diabetes pipeline"
-```
-2. (Opcional) Se usar Git LFS para modelos:
-```
-git lfs install; git lfs track "*.joblib"; git add .gitattributes
-git add *.joblib
-git commit -m "Add model via Git LFS"
-```
-3. Crie repositório remoto no GitHub (usando `gh` CLI) ou via web. Com `gh`:
-```
-gh repo create <seu-usuario>/<nome-repo> --public --source=. --remote=origin
-git push -u origin main
-```
-
-Se não tiver `gh`, crie o repo no GitHub pelo navegador e então:
-```
-git remote add origin https://github.com/<seu-usuario>/<nome-repo>.git
-git branch -M main
-git push -u origin main
-```
-
 **Licença**
 Projeto sob licença MIT — ver `LICENSE`.
 
